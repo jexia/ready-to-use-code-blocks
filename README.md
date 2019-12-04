@@ -4,7 +4,7 @@ This repo has some ready-to-use code blocks examples using Jexia's SDK.
 - [x] Authenticate API
 - [x] Authenticate UMS
 - [x] Select Data
-- [ ] Insert data
+- [x] Insert data
 - [ ] Update data
 - [ ] Delete data
 - [ ] Complex filtering

@@ -8,9 +8,9 @@ function App() {
 
   // You need to use API Key / API Secret which is generated in Jexia. Do not forget make Policy for API   
   jexiaClient().init({
-    projectID: "965e8fba-7d43-4cba-9ee4-6bf9c84d0f20",
-    key: "129a4e21-36b1-4406-92e8-40b43abd7e1a",
-    secret: "kyH9I+LCUy5ns2a/2vdf3oThHMbMeRK76trzt1+HVBUQQG9uH8bGGTM6GA1LSbqnbhi7kpqhmtD0A/0PD4O8LQ==",
+    projectID: "project_id",
+    key: "API_KEY",
+    secret: "API_SECRET",
   },dataModule);
 
 

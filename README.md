@@ -6,7 +6,7 @@ This repo has some ready-to-use code blocks examples using Jexia's SDK.
 - [x] Select Data
 - [x] Insert data
 - [x] Update data
-- [ ] Delete data
+- [x] Delete data
 - [ ] Complex filtering
 - [ ] Sorting and Limits
 

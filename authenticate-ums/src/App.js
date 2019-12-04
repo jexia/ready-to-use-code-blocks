@@ -19,7 +19,7 @@ async function App() {
   });
 
   // Now you can run CRUD operations for DataSet: clients
-  return dataModule.dataset("books")
+  return dataModule.dataset("clients")
     .select()
     .execute()
     .then(data => {

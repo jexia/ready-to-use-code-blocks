@@ -6,12 +6,12 @@ const dataModule = dataOperations();
 
 function App() {
 
-  // You need to use API Key / API Secret which is generated in Jexia. Do not forget make Policy for API   
-  jexiaClient().init({
-    projectID: "project_id",
-    key: "API_KEY",
-    secret: "API_SECRET",
-  },dataModule);
+    // You need to use API Key / API Secret which is generated in Jexia. Do not forget make Policy for API   
+    jexiaClient().init({
+      projectID: "project_id",
+      key: "API_KEY",
+      secret: "API_SECRET",
+    },dataModule);
 
 
     // Now you can run CRUD operations for DataSet: clients

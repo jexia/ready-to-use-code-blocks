@@ -8,6 +8,6 @@ This repo has some ready-to-use code blocks examples using Jexia's SDK.
 - [x] Update data
 - [x] Delete data
 - [x] Complex filtering
-- [ ] Sorting and Limits
+- [x] Sorting and Limits
 
 

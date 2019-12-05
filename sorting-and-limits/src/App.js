@@ -2,8 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { jexiaClient, dataOperations } from "jexia-sdk-js/node";
-import request from 'superagent'
-// const superagent = require('superagent');
 
 const dataModule = dataOperations();
 

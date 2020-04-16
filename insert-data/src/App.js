@@ -28,14 +28,14 @@ function App() {
 
   // Either way, the response will be an array
   return insertQuery
-    .execute()
-    .then(records => {
-      // you will always get an array of created records, including their generated IDs (even when inserting a single record)
-      return records;
-    }).catch(error => {
-      // you can see the error info here, if something goes wrong
-      return error;
-    });
+        .subscribe(
+          data => {
+            return data;
+          },
+          error => {
+            return error;
+          }
+        )
 }
 
 export default App;

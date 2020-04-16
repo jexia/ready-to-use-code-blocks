@@ -16,7 +16,7 @@ async function App() {
     const result = await dataModule.dataset("clients")
       .delete()
       .where(field("id").isEqualTo("id1"))
-      .execute();
+      .subscribe();
   
     // you will be able to access the deleted clients here
     // they won't be stored in the DB anymore, but maybe you

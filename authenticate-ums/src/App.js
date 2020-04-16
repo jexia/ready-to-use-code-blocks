@@ -21,16 +21,17 @@ async function App() {
   // Now you can run CRUD operations for DataSet: clients
   return dataModule.dataset("clients")
     .select()
-    .execute()
-    .then(data => {
-      // you have been succesfully logged in!
-      // you can start using the dataModule variable to operate on records here
-      return data;
-    }).catch(error => {
-      // uh-oh, there was a problem logging in, check the error.message for more info
-      return error;
-    });
-
+    .subscribe(
+      data => {
+        // you have been succesfully logged in!
+        // you can start using the dataModule variable to operate on records here
+        return data;
+      },
+      error => {
+        // uh-oh, there was a problem logging in, check the error.message for more info
+        return error;
+      }
+    )
   }
 
 export default App;

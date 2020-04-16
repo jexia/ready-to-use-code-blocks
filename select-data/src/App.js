@@ -29,12 +29,14 @@ function App() {
     .where(field("qty").isNotNull())
     .where(field("qty").isNull())
     // .where(field("qty").satisfiesRegexp('[a-z0-9]')) //'unable to decode the expression: unsupported condition operator "regexp"',
-    .execute()
-    .then(data => {
-      return data;
-    }).catch(error => {
-      return error;
-    });
+    .subscribe(
+      data => {
+        return data;
+      },
+      error => {
+        return error;
+      }
+    );
   
 }
 

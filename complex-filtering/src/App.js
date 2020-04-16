@@ -51,13 +51,14 @@ function App() {
     .where(isAuthorDutch)
     .where(isKidOrSenior)
     .where(isTomAndIsDuthOrKidOrSenior)
-    .execute()
-    .then(data => {
-      return data;
-    }).catch(error => {
-      return error;
-    });
-  
+    .subscribe(
+      data => {
+        return data;
+      },
+      error => {
+        return error;
+      }
+    )
 }
 
 export default App;

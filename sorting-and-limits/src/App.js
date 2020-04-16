@@ -18,7 +18,7 @@ async function App() {
   const sortedPosts = await dataModule.dataset("posts")
   .select()
   .sortAsc("created_at")  // .sortDesc("created_at")
-  .execute();
+  .subscribe();
 
   console.log(sortedPosts)
 
@@ -27,7 +27,7 @@ async function App() {
   .select()
   .limit(2)
   .offset(5)
-  .execute();
+  .subscribe();
 }
 
 export default App;

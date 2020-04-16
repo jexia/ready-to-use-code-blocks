@@ -16,19 +16,22 @@ async function App() {
 
     console.log(dataModule.dataset("clients")
     .select()
-    .execute()
-    .then(data => {
-      return data;
-    }).catch(error => {
-      return error;
-    }))
+    .subscribe(
+      data => {
+        return data;
+      },
+      error => {
+        return error;
+      }
+    ))
+    
 
     const filter = field("id").isInArray(["id1", "id2"]);
     const affectedRecords = await dataModule
       .dataset("clients")
       .update({ status: "good" })
       .where(filter)
-      .execute();
+      .subscribe();
   
     return affectedRecords;
 
